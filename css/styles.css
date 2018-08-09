@@ -73,17 +73,50 @@ h2 {
     margin-top: 8px;
 }
 
-/* INPUTS STYLE */
+
+  
+/* ========= CONTACT INFORMATION ========= */
+
+fieldset {
+    border: none;
+    border-top: 2px solid rgb(8, 8, 68);
+    margin-top: 3px;
+    padding-top: 15px;
+}
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#zip {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.input-info {
+    margin-top: 15px;
+}
+
+::placeholder {
+    text-align: right;
+}
+
+/* INPUT-TEXT and TEXT AREA STYLE */
 
 .input-info>input,
-.input-info>select {
+.input-info>select,
+textarea {
     background-color: rgba(189, 189, 189, 0.329);
-    width: 100%;
     padding: 15px 10px 15px;
-    display: inline-block;
     border: none;
     border-radius: 4px;
-    box-sizing: border-box;
+    margin-top: 10px;
+    resize: none; /* Text area only */
+    /* width: 100%; */
+    /* display: inline-block; */
+    /* box-sizing: border-box; */
 }
 
 .input-info>input:focus {
@@ -110,40 +143,36 @@ select::-ms-expand {
     display: none;
   }
 
-  
-/* CONTACT INFORMATION */
-
-fieldset {
-    border: none;
-    border-top: 2px solid rgb(8, 8, 68);
-    margin-top: 3px;
-    padding-top: 15px;
-}
-
-.sections {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-#zip {
-    width: 50%;
-}
-
-.sections>* {
-    margin: 5px 0 5px;
-}
-
-::placeholder {
-    text-align: right;
-}
-
-/* NEWSLETTER */
+/* ======== NEWSLETTER ========== */
 
 .check-container {
     display: flex;
 }
 
+/* CHECKBOX AND RADIO STYLE */
+
+
+/* BUTTONS STYLE */
+
+button {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    background-color: rgb(89, 176, 211);
+    padding: 20px 0px 20px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 4px;
+    /* box-sizing: border-box; */
+    /* width: 100%; */
+    /* display: inline-block; */
+}
+
+button[type="reset"] {
+    background-color: #FF5C5C;
+    padding: 10px 0 10px;
+}
 
 /* ============= 
         FOOTER 
@@ -151,4 +180,8 @@ fieldset {
 
 footer {
     text-align: center;
+}
+
+footer>p {
+    margin: 20px 0 50px;
 }
