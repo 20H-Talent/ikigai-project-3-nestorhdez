@@ -1,17 +1,154 @@
-/* RESET */
+/* ============= 
+        RESET 
+    ============ */
 *,
 html {
     margin:0;
     padding:0;
 }
 
-/* HEADER */
+/* ============= 
+        FONT 
+    ============ */
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+/*  FONTS STYLES  */
+
+    h2 {
+        color: rgb(34, 34, 66);
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: .9rem;
+        color: rgb(94, 94, 94)
+    }
+    
+    label{
+        color: rgba(53, 62, 100, 0.904)
+    }
+
+/* ============= 
+        HEADER 
+    ============ */
 
 header {
-    background-color: rgb(0, 0, 82);
-    padding: 30px;
+    background-color: rgb(34, 34, 66);
+    padding: 20px 0 20px;
 }
 
 h1 {
     color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* ============= 
+        MAIN 
+    ============ */
+
+
+main,
+footer {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.introduction{
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid rgb(8, 8, 68)
+}
+
+
+/* ====== FORM ======= */
+
+h2 {
+    margin-top: 8px;
+}
+
+/* INPUTS STYLE */
+
+.input-info>input,
+.input-info>select {
+    background-color: rgba(189, 189, 189, 0.329);
+    width: 100%;
+    padding: 15px 10px 15px;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-info>input:focus {
+    border: 2px solid rgb(34, 34, 66);
+    
+}
+
+select {
+    color: rgb(175, 174, 174);
+}
+
+
+/* HIDE ARROW FROM SELECT */
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome and Safari */
+    -webkit-appearance: none;
+  }
+
+/* For IE10 */
+select::-ms-expand {
+    display: none;
+  }
+
+  
+/* CONTACT INFORMATION */
+
+fieldset {
+    border: none;
+    border-top: 2px solid rgb(8, 8, 68);
+    margin-top: 3px;
+    padding-top: 15px;
+}
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#zip {
+    width: 50%;
+}
+
+.sections>* {
+    margin: 5px 0 5px;
+}
+
+::placeholder {
+    text-align: right;
+}
+
+/* NEWSLETTER */
+
+.check-container {
+    display: flex;
+}
+
+
+/* ============= 
+        FOOTER 
+    ============ */
+
+footer {
+    text-align: center;
 }
