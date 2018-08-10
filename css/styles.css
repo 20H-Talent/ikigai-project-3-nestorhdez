@@ -95,7 +95,8 @@ fieldset {
     margin-bottom: 20px;
 }
 
-.input-info {
+.input-info,
+.input-news {
     margin-top: 15px;
 }
 
@@ -149,8 +150,58 @@ select::-ms-expand {
     display: flex;
 }
 
+
 /* CHECKBOX AND RADIO STYLE */
 
+.check-container {
+    margin-top: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 18px;
+  width: 18px;
+  margin-right: 15px;
+  background: rgba(189, 189, 189, 0.329);
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+input[type="checkbox"] {
+  border-radius: 3px;
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  border: 2px solid rgb(34, 34, 66);
+}
+
+input[type="checkbox"]:checked:after {
+  content: '✔️';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: .6rem;
+}
+
+input[type="radio"]:checked:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+  height: 55%;
+  border-radius: 50%;
+  background-color: rgb(34, 34, 66);
+}
 
 /* BUTTONS STYLE */
 
@@ -185,3 +236,4 @@ footer {
 footer>p {
     margin: 20px 0 50px;
 }
+
