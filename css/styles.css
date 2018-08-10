@@ -52,8 +52,7 @@ h1 {
     ============ */
 
 
-main,
-footer {
+.container {
     width: 90%;
     margin: 0 auto;
 
@@ -61,8 +60,7 @@ footer {
 
 .introduction{
     text-align: center;
-    margin-top: 20px;
-    padding-bottom: 20px;
+    padding: 1.6rem 0 2rem;
     border-bottom: 4px solid rgb(8, 8, 68)
 }
 
@@ -115,9 +113,6 @@ textarea {
     border-radius: 4px;
     margin-top: 10px;
     resize: none; /* Text area only */
-    /* width: 100%; */
-    /* display: inline-block; */
-    /* box-sizing: border-box; */
 }
 
 .input-info>input:focus {
@@ -196,7 +191,7 @@ input[type="radio"]:checked:after {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /*mueve 50% basandonse en el elemento, no del contenedor*/
   width: 55%;
   height: 55%;
   border-radius: 50%;
@@ -210,14 +205,11 @@ button {
     font-weight: bold;
     font-size: 18px;
     font-family: 'Merriweather', serif;
-    background-color: rgb(89, 176, 211);
+    background-color: #4ebbb5;
     padding: 20px 0px 20px;
     margin-top: 25px;
     border: none;
     border-radius: 4px;
-    /* box-sizing: border-box; */
-    /* width: 100%; */
-    /* display: inline-block; */
 }
 
 button[type="reset"] {
@@ -234,6 +226,37 @@ footer {
 }
 
 footer>p {
-    margin: 20px 0 50px;
+    margin: 2rem 0 7rem;
 }
 
+/* ============
+    MEDIA QUERY 
+    =========== */
+
+    @media (min-width: 768px) {
+        .container {
+            width: 50%;
+        }
+        
+        .input-info {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            flex-wrap: wrap; 
+        }
+
+        .input-info label {
+            width: 30%;
+            box-sizing: border-box;
+        }
+
+        .input-info input,
+        .input-info select {
+            width: 70%;
+            box-sizing: border-box;
+        }
+
+        #zip {
+            width: 25%;
+            box-sizing: border-box; 
+        }
