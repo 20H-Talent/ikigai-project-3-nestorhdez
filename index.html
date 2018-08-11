@@ -22,7 +22,7 @@
                 <p>Get the latest news on how your code is doing right in your inbox</p>
             </div>  
 
-            <form action="">
+            <form>
                 <fieldset>
                     <h2>Contact Information</h2>
 
@@ -53,8 +53,8 @@
 
                     <div class="sections input-info">
                         <label for="state">State</label>
-                        <select type="text" name="user-state" id="state">
-                            <option value="choose-state" disabled selected hidden>Choose State</option>
+                        <select name="user-state" id="state" required>
+                            <option value="" disabled selected hidden>Choose State</option>
                             <option value="islas-canarias">Islas Canarias</option>
                             <option value="andalucia">Andalucía</option>
                             <option value="aragon">Aragón</option>
@@ -77,7 +77,6 @@
                         <div class="check-container">
                             <input type="checkbox" name="user-interest" value="interest-html" id="html-news">
                             <label for="html-news" class="boxmark-container">HTML News</label>
-                            <span class="broderbox"></span>
                         </div>
 
                         <div class="check-container">
