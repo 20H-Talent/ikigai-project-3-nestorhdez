@@ -108,16 +108,18 @@ fieldset {
 .input-info>select,
 textarea {
     background-color: #eff0f1;
-    padding: 15px 10px 15px;
+    padding: 15px 10px;
     border: none;
     border-radius: 4px;
     margin-top: 10px;
     resize: none; /* Text area only */
 }
 
-.input-info>input:focus {
+.input-info>input:focus,
+.input-info>select:focus,
+textarea:focus {
     border: 2px solid #2d3945;
-    
+    padding: 13px 10px;
 }
 
 
@@ -257,5 +259,11 @@ footer>p {
         #zip {
             width: 25%;
             box-sizing: border-box; 
+        }
+
+        .input-info>input,
+        .input-info>select,
+        textarea {
+            margin-top: 0;
         }
     }
